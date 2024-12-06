@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: 'DynaPuff', cursive;
+    background-color: #EFF5FB;
+}
+
+header {
+    background-image: url('assets/Header.png'); /* Imagen de fondo del header */
+    background-size: cover; /* Cubre todo el header */
+    background-position: center; /* Centra la imagen */
+    height: 300px; /* Altura del header */
+    width: 100%; /* Ancho completo */
+    display: flex; /* Usamos flexbox */
+    justify-content: space-between; /* Espaciado entre los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 0 20px; /* Espaciado lateral */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+}
+
+.img {
+    width: 35%; /* Ancho del GIF */
+    height: auto;
+    padding-top: 20px;
+
+}
+/* Estilo para el título */
+header h1 {
+    color: #cb5681; /* Color del texto */
+    font-size: 3em; /* Tamaño del texto */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra del texto */
+    margin: 0; /* Elimina el margen del h1 */
+} 
+
+/* Contenedor opcional para centrar la imagen */
+.wobble-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centra verticalmente */
+    background-color: #EFF5FB; /* Fondo */
+}
+
+/* Imagen con animación de wobble */
+.wobble-img {
+    width: 35%; /* Ancho del GIF */
+    height: auto;
+    animation: wobble 2s infinite; /* Aplica la animación */
+}
+
+
+
+/* Animación tipo Wobble */
+@keyframes wobble {
+    0%, 100% {
+        transform: rotate(0deg); /* Posición inicial y final */
+    }
+    15% {
+        transform: rotate(-15deg); /* Gira hacia la izquierda */
+    }
+    30% {
+        transform: rotate(10deg); /* Rebota hacia la derecha */
+    }
+    45% {
+        transform: rotate(-5deg); /* Pequeña inclinación izquierda */
+    }
+    60% {
+        transform: rotate(5deg); /* Pequeña inclinación derecha */
+    }
+    75% {
+        transform: rotate(-3deg); /* Ajusta el balanceo */
+    }
+    90% {
+        transform: rotate(3deg); /* Balanceo final antes de regresar */
+    }
+}

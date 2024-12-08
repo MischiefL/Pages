@@ -4,12 +4,20 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
         
         {
             "type": "msedge",
             "request": "launch",
             "name": "Open SantaSecreto.html",
             "file": "c:\\Users\\Cggm1\\Pages\\SantaSecreto.html"
+        },
+        {
+            "type": "msedge",
+            "request": "launch",
+            "name": "Open santaSecreto2.html",
+            "file": "c:\\Users\\Cggm1\\Pages\\santaSecreto2.html"
         }
+        
     ]
 }

@@ -5,6 +5,7 @@
     "version": "0.2.0",
     "configurations": [
 
+
         
         {
             "type": "msedge",
@@ -17,6 +18,12 @@
             "request": "launch",
             "name": "Open santaSecreto2.html",
             "file": "c:\\Users\\Cggm1\\Pages\\santaSecreto2.html"
+        },
+        {
+            "type": "msedge",
+            "request": "launch",
+            "name": "Open Diseño.html",
+            "file": "c:\\Users\\Cggm1\\Pages\\Diseño.html"
         }
         
     ]

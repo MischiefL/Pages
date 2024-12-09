@@ -1,0 +1,243 @@
+/* General Styles
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe5ec;
+    color: #5c3a00;
+    background-image: url(assets/background.jpg);
+  }
+  
+  h1, h2, h3 {
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+   */
+
+   /* General Styles */
+body {
+    font-family: 'Mountains of Christmas', cursive;
+    margin: 0;
+    padding: 0;
+    background: url(assets/lavander.jpg) no-repeat center center fixed;
+    background-size:cover;
+    background-color:#B3DDF2; /* #B22222;*/
+    color: #f3f3f3;
+  }
+  
+  h1, h2, h3 {
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }img {
+    background: transparent;
+}
+
+  
+  /* Header */
+  .header {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url(assets/header.png);
+   /*no-repeat center center fixed;*/
+    background-size:cover;
+    align-items: center; /* Alinea elementos verticalmente */
+  }
+
+  .header h1 {
+    font-size: 6rem;
+    color: #ffffff;
+  }
+  
+  .header p {
+    font-family: 'Pompiere';
+    margin-top: 0.5rem;
+    font-size: 2rem;
+    color: #603430;
+  }
+  
+  .cta-button {
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #ff6f91;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Featured Desserts */
+  .featured-desserts {
+    padding: 2rem;
+ 
+  }
+  
+  .featured-desserts h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #ff6f91;
+  }
+  
+  .desserts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .dessert-card {
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dessert-card .dessert-image {
+    height: 150px;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .dessert-card h3 {
+    font-family: 'Pompiere',bold;
+    color: #603430;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+  
+  .dessert-card p {
+    font-size: 1.3rem; 
+    font-family: 'Pompiere';
+    color: #5c3a00;
+  }
+  
+  .price {
+    font-size: 1rem;   
+    font-family: 'Pompiere';
+    color: #ff6f91;
+    font-weight: bold;
+    display: block;
+    margin-top: 1rem;
+  }
+  
+  .view-all {
+    display: block;
+    margin: 2rem auto;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #ff6f91;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 1rem; 
+    background-color:#B3DDF2;
+    font-size: 0.9rem;
+    color: #f3f3f3;
+  }
+
+  header .img {
+  
+    animation: wobble 3s infinite; /* Animación tipo wobble */
+}
+  /* Animación tipo Wobble */
+@keyframes wobble {
+    0%, 100% {
+        transform: rotate(0deg); /* Posición inicial y final */
+    }
+    15% {
+        transform: rotate(-5deg); /* Gira hacia la izquierda */
+    }
+    30% {
+        transform: rotate(5deg); /* Rebota hacia la derecha */
+    }
+    45% {
+        transform: rotate(-5deg); /* Pequeña inclinación izquierda */
+    }
+    60% {
+        transform: rotate(5deg); /* Pequeña inclinación derecha */
+    }
+    75% {
+        transform: rotate(-3deg); /* Ajusta el balanceo */
+    }
+    90% {
+        transform: rotate(3deg); /* Balanceo final antes de regresar */
+    }
+}
+
+/* Estilos para los copos de nieve */
+.snowflake {
+    position: absolute;
+    top: -10px;
+    z-index: 10;
+    font-size: 1.5em;
+    color: white;
+    opacity: 0.8;
+    pointer-events: none;
+    user-select: none;
+    animation: snow 10s linear infinite;
+}
+
+/* Animación de los copos de nieve */
+@keyframes snow {
+    0% {
+        transform: translateY(-10px) translateX(0); /* Comienza en la parte superior */
+    }
+    100% {
+        transform: translateY(100vh) translateX(30px); /* Cae hasta el fondo */
+    }
+}
+
+/* Copos de nieve adicionales (puedes ajustar la cantidad) */
+.snowflake:nth-child(1) {
+    left: 10%;
+    animation-duration: 12s;
+}
+.snowflake:nth-child(2) {
+    left: 20%;
+    animation-duration: 8s;
+}
+.snowflake:nth-child(3) {
+    left: 30%;
+    animation-duration: 10s;
+}
+.snowflake:nth-child(4) {
+    left: 40%;
+    animation-duration: 14s;
+}
+.snowflake:nth-child(5) {
+    left: 50%;
+    animation-duration: 12s;
+}
+.snowflake:nth-child(6) {
+    left: 60%;
+    animation-duration: 16s;
+}
+.snowflake:nth-child(7) {
+    left: 70%;
+    animation-duration: 9s;
+}
+.snowflake:nth-child(8) {
+    left: 80%;
+    animation-duration: 7s;
+}
+.snowflake:nth-child(9) {
+    left: 90%;
+    animation-duration: 15s;
+}

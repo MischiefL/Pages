@@ -10,8 +10,9 @@ body {
   font-family: "Cherry Bomb One", serif;
   background-image: url("assets/lavander.jpg");
   background-size: cover;
-  color: #9b59b6;
+  background-position: center;
   text-align: center;
+  color: #9b59b6;
 }
 
 header {
@@ -27,166 +28,204 @@ header {
   color: #9b59b6;
 }
 
-.header-container p {
-  font-family: "Pompiere", sans-serif;
-  font-size: 2rem;
-  margin-top: -10px;
-}
-
 .avatar img {
   margin-top: -80px;
   width: 200px;
   height: auto;
 }
-footer .tree {
-  width: 100px;
-  height: auto;
-  margin: 20px auto;
-}
 
-.options {
-  margin: 30px auto;
-  padding: 20px; /* Espaciado interno */
-  background-image: url("assets/div2.png");
-  background-size: cover; /* Cambia según el diseño deseado */
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 80%;
-  /*border: 2px solid #9b59b6;*/
-  border-radius: 12px;
-  overflow: hidden; /* Evita desbordamientos inesperados */
-}
-
-.section {
-  background-image: url('assets/div2.png');
-  background-size: contain; /* Mantén las proporciones de la imagen original */
-  background-position: center; /* Centra la imagen en el contenedor */
-  background-repeat: no-repeat;
-    padding: 20px; /* Ajusta los márgenes internos según sea necesario */
-}
-
-.img {
-  
-  animation: wobble 3s infinite; /* Animación tipo wobble */
-}
- /* Animación tipo Wobble */
- @keyframes wobble {
-  0%, 100% {
-      transform: rotate(0deg); /* Posición inicial y final */
-  }
-  15% {
-      transform: rotate(-5deg); /* Gira hacia la izquierda */
-  }
-  30% {
-      transform: rotate(5deg); /* Rebota hacia la derecha */
-  }
-  45% {
-      transform: rotate(-5deg); /* Pequeña inclinación izquierda */
-  }
-  60% {
-      transform: rotate(5deg); /* Pequeña inclinación derecha */
-  }
-  75% {
-      transform: rotate(-3deg); /* Ajusta el balanceo */
-  }
-  90% {
-      transform: rotate(3deg); /* Balanceo final antes de regresar */
-  }
-}
-
-
-/* Navbar */
 .navbar {
-  background-color:#FFF6F7;
-  color: #9b59b6;
+  background-color: #FFF6F7;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 60px;
-  width: 100%;
   position: fixed;
   top: 0;
+  width: 100%;
   z-index: 10;
 }
 
 .nav-container {
   display: flex;
   align-items: center;
+  gap: 10px;
+}
+
+.nav-title {
+  font-size: 18px;
+  color: #9b59b6;
+}
+
+/* Grid */
+.grid-header {
+  gap: 20px;
+  padding: 20px; 
+  margin: 50px auto -20px; 
   width: 90%;
-  max-width: 1200px;
+  max-width: 850px;
+  height: 60px;
+  background-image: url("assets/divHeader3.PNG");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.desserts-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  padding: 1rem;
-}
-
-.dessert-card {
-  text-align: center;
-  background: #fff;
-  border-radius: 10px;
-  padding: 1rem;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.dessert-card .dessert-image {
-  height: 100px;
-  background-color: #f3f3f3;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}
-
-.dessert-card h3 {
-  font-family: 'Pompiere',bold;
-  color: #603430;
+.grid-header-text {
+  margin-top: -10px;
   font-size: 1.5rem;
-  margin: 0.5rem 0;
+  color: #fff;
+  text-align: left;
 }
 
-.dessert-card p {
-  font-size: 1.3rem; 
-  font-family: 'Pompiere';
-  color: #5c3a00;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 850px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
-.price {
-  font-size: 1rem;   
-  font-family: 'Pompiere';
-  color: #ff6f91;
-  font-weight: bold;
-  display: block;
-  margin-top: 1rem;
+.card {
+  width: 120px;
+  height: 180px;
+  border: 2px solid #f1ebf7;
+  border-radius: 10px; 
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.options {
-  margin: 30px auto;
-  width: 80%;
-}
-
-.options-header {
-  background-color: #9b59b6;
-  color: white;
-  padding: 10px;
+.inner-card {
+  margin-top: 15px;
+  width: 90px;
+  height: 90px;
+  border: 2px solid #f1ebf7;
   border-radius: 8px;
 }
 
-.options-header .emoji {
-  font-size: 1.2rem;
+footer .tree {
+  width: 200px;
+  height: auto;
+  margin: 20px auto;
 }
 
-.options-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  margin-top: 20px;
+.animate {
+  animation: wobble 3s infinite;
 }
 
-.option-box {
-  width: 100%;
-  padding-bottom: 100%;
-  background-color: #f8f8f8;
-  border: 2px solid #9b59b6;
-  border-radius: 12px;
+/* Animación tipo wobble */
+@keyframes wobble {
+  0%, 100% { transform: rotate(0deg); }
+  15% { transform: rotate(-5deg); }
+  30% { transform: rotate(5deg); }
+  45% { transform: rotate(-5deg); }
+  60% { transform: rotate(5deg); }
+  75% { transform: rotate(-3deg); }
+  90% { transform: rotate(3deg); }
+}
+
+/* Estilos para los copos de nieve */
+.snowflake {
+  position: absolute;
+  top: -10px;
+  z-index: 10;
+  font-size: 1.5em;
+  color: white;
+  opacity: 0.8;
+  pointer-events: none;
+  user-select: none;
+  animation: snow 10s linear infinite;
+}
+
+/* Animación de los copos de nieve */
+@keyframes snow {
+  0% {
+      transform: translateY(-10px) translateX(0); /* Comienza en la parte superior */
+  }
+  100% {
+      transform: translateY(100vh) translateX(30px); /* Cae hasta el fondo */
+  }
+}
+
+/* Copos de nieve adicionales (puedes ajustar la cantidad) */
+.snowflake:nth-child(1) {
+  left: 10%;
+  animation-duration: 12s;
+}
+.snowflake:nth-child(2) {
+  left: 20%;
+  animation-duration: 8s;
+}
+.snowflake:nth-child(3) {
+  left: 30%;
+  animation-duration: 10s;
+}
+.snowflake:nth-child(4) {
+  left: 40%;
+  animation-duration: 14s;
+}
+.snowflake:nth-child(5) {
+  left: 50%;
+  animation-duration: 12s;
+}
+.snowflake:nth-child(6) {
+  left: 60%;
+  animation-duration: 16s;
+}
+.snowflake:nth-child(7) {
+  left: 70%;
+  animation-duration: 9s;
+}
+.snowflake:nth-child(8) {
+  left: 80%;
+  animation-duration: 7s;
+}
+.snowflake:nth-child(9) {
+  left: 90%;
+  animation-duration: 15s;
+}
+
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  header {
+    margin-top: 60px;
+  }
+
+  .header-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .avatar img {
+    width: 150px;
+  }
+
+  .grid-container {
+    gap: 10px;
+  }
+
+  .card {
+    width: 100px;
+    height: 150px;
+  }
+
+  footer .tree {
+    width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container h1 {
+    font-size: 2rem;
+  }
+
+  .nav-title {
+    font-size: 14px;
+  }
+
+  .grid-header-text {
+    font-size: 1.2rem;
+  }
 }

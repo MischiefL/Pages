@@ -1,87 +1,70 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Plantilla Navideña</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Pompiere&display=swap" 
-  rel="stylesheet">
-  <link rel="stylesheet" href="Styles.css">
+  <title>Intercambio Navideño</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Pompiere&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
   <script src="libs/circletype.min.js"></script>
   <script src="libs/main.js"></script>
 </head>
+
 <body>
+  <div class="snowflake">❄</div>
+  <div class="snowflake">❄</div>
+  <div class="snowflake">❄</div>
+  <div class="snowflake">❄</div>
+  <div class="snowflake">❄</div>
+  <div class="snowflake">❄</div>
+  <div class="snowflake">❄</div>
+  <div class="snowflake">❄</div>
+  <div class="snowflake">❄</div>
   <nav class="navbar">
     <div class="nav-container">
-      <img src="assets/bunny.png" width="55px" style="margin-left: -20px;">
-      <p style="margin-left: 5px; font-size: 18px;"> Mischief ~</p>
+      <img src="assets/bunny.png" alt="Logo Bunny" width="60px" class="nav-logo">
+      <p class="nav-title">Mischief ~</p>
     </div>
   </nav>
 
   <header>
     <div class="header-container">
-        <h1 id="curved-text">M e r r y  <p class="img"> 🦊 </p>  X m as!</h1>
+      <h1 id="curved-text">M e r r y <span class="animate">🦊</span> X m a s !</h1>
       <div class="avatar">
-        <img src="assets/Mischief 8.gif" 
-        alt="Avatar con sombrero de árbol navideño" >
+        <img src="assets/Mischief 8.gif" class="animate" alt="Avatar con sombrero de árbol navideño">
       </div>
     </div>
   </header>
+  
   <h1 id="curved-text2">✨ ~ Felices Fiestas a todos ~ ✨</h1>
+  
+  <div class="grid-header">
+    <p class="grid-header-text">Mis opciones 🎁 ~</p>
+  </div>
 
-  <main>
-    <section id="inicio" class="section">
-
-        <div class="desserts-grid">
-          <div class="dessert-card">
-          <div class="dessert-image">
-          <img src="assets/MAZAPAN.jpg" alt="Mazapan" class="dessert-image">
-          </div>
-          <h3>Mazapan</h3>
-          <p>Mazapán De la Rosa endulzado con splenda 21 g</p>
-          <span class="price">$9.50 ~ $12.50</span>
-          </div>
-          <div class="dessert-card">
-          <div class="dessert-image">
-          <img src="assets/HERSHEYS.jpg" alt="Matcha Roll" class="dessert-image">
-          </div>
-          <h3>Matcha Roll</h3>
-          <p>A fluffy matcha cake roll with a cream filling and fresh fruit topping.</p>
-          <span class="price">$35.00</span>
-          </div>
-          <div class="dessert-card">
-          <div class="dessert-image">
-          <img src="assets/CARLOSV.jpg" alt="Matcha Roll" class="dessert-image">
-          </div>
-          <h3>Matcha Roll</h3>
-          <p>A fluffy matcha cake roll with a cream filling and fresh fruit topping.</p>
-          <span class="price">$35.00</span>
-          </div>
-          <div class="dessert-card">
-              <div class="dessert-image">
-              <img src="assets/CARLOSV.jpg" alt="Matcha Roll" class="dessert-image">
-              </div>
-              <h3>Matcha Roll</h3>
-              <p>A fluffy matcha cake roll with a cream filling and fresh fruit topping.</p>
-              <span class="price">$35.00</span>
-          </div>
-          <div class="dessert-card">
-              <div class="dessert-image">
-              <img src="assets/CARLOSV.jpg" alt="Matcha Roll" class="dessert-image">
-              </div>
-              <h3>Matcha Roll</h3>
-              <p>A fluffy matcha cake roll with a cream filling and fresh fruit topping.</p>
-              <span class="price">$35.00</span>
-          </div>
-          </section>
-      </div>
-    </section>
-  </main>
-
+  <div class="grid-container">
+    <!-- Tarjetas (imágenes) -->
+    <div class="card"><img src="assets/2 (1).jpg" class="inner-card" alt="Navidad"></div>
+    <div class="card"><img src="assets/2 (1).png" class="inner-card" alt="Navidad"></div>
+    <div class="card"><img src="assets/2 (2).jpg" class="inner-card" alt="Navidad"></div>
+    <div class="card"><img src="assets/2 (2).png" class="inner-card" alt="Navidad"></div>
+    <div class="card"><img src="assets/2 (3).PNG" class="inner-card" alt="Navidad"></div>
+    <div class="card"><img src="assets/3.JPG" class="inner-card" alt="Navidad"></div>
+    <div class="card"><img src="assets/a.jpg" class="inner-card" alt="Navidad"></div>
+    <div class="card"><img src="assets/b.jpg" class="inner-card" alt="Navidad"></div>
+    <div class="card"><img src="assets/v.jpg" class="inner-card" alt="Navidad"></div>  
+  </div>
 
   <footer>
+    <audio id="myAudio" src="assets/Burrito Sabanero (Instrumental).mp3" controls loop onplay="this.volume = 0.2;"></audio>
     <img class="tree" src="assets/arbol.gif" alt="Árbol de Navidad">
   </footer>
+  <script>
+    // Quitar la animación de carga cuando la página esté completamente cargada
+    window.addEventListener('load', function() {
+      document.querySelector('.loading').style.display = 'none';
+      document.getElementById('myAudio').play();
+    });
+  </script>
 </body>
 </html>

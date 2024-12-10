@@ -1,0 +1,231 @@
+/* Tipografía */
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Pompiere&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Cherry Bomb One", serif;
+  background-image: url("assets/lavander.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #9b59b6;
+}
+
+header {
+  margin-top: 100px;
+  background-image: url("assets/header.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-container h1 {
+  font-size: 3.5rem;
+  color: #9b59b6;
+}
+
+.avatar img {
+  margin-top: -80px;
+  width: 200px;
+  height: auto;
+}
+
+.navbar {
+  background-color: #FFF6F7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-title {
+  font-size: 18px;
+  color: #9b59b6;
+}
+
+/* Grid */
+.grid-header {
+  gap: 20px;
+  padding: 20px; 
+  margin: 50px auto -20px; 
+  width: 90%;
+  max-width: 850px;
+  height: 60px;
+  background-image: url("assets/divHeader3.PNG");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.grid-header-text {
+  margin-top: -10px;
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: left;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 850px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.card {
+  width: 120px;
+  height: 180px;
+  border: 2px solid #f1ebf7;
+  border-radius: 10px; 
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.inner-card {
+  margin-top: 15px;
+  width: 90px;
+  height: 90px;
+  border: 2px solid #f1ebf7;
+  border-radius: 8px;
+}
+
+footer .tree {
+  width: 200px;
+  height: auto;
+  margin: 20px auto;
+}
+
+.animate {
+  animation: wobble 3s infinite;
+}
+
+/* Animación tipo wobble */
+@keyframes wobble {
+  0%, 100% { transform: rotate(0deg); }
+  15% { transform: rotate(-5deg); }
+  30% { transform: rotate(5deg); }
+  45% { transform: rotate(-5deg); }
+  60% { transform: rotate(5deg); }
+  75% { transform: rotate(-3deg); }
+  90% { transform: rotate(3deg); }
+}
+
+/* Estilos para los copos de nieve */
+.snowflake {
+  position: absolute;
+  top: -10px;
+  z-index: 10;
+  font-size: 1.5em;
+  color: white;
+  opacity: 0.8;
+  pointer-events: none;
+  user-select: none;
+  animation: snow 10s linear infinite;
+}
+
+/* Animación de los copos de nieve */
+@keyframes snow {
+  0% {
+      transform: translateY(-10px) translateX(0); /* Comienza en la parte superior */
+  }
+  100% {
+      transform: translateY(100vh) translateX(30px); /* Cae hasta el fondo */
+  }
+}
+
+/* Copos de nieve adicionales (puedes ajustar la cantidad) */
+.snowflake:nth-child(1) {
+  left: 10%;
+  animation-duration: 12s;
+}
+.snowflake:nth-child(2) {
+  left: 20%;
+  animation-duration: 8s;
+}
+.snowflake:nth-child(3) {
+  left: 30%;
+  animation-duration: 10s;
+}
+.snowflake:nth-child(4) {
+  left: 40%;
+  animation-duration: 14s;
+}
+.snowflake:nth-child(5) {
+  left: 50%;
+  animation-duration: 12s;
+}
+.snowflake:nth-child(6) {
+  left: 60%;
+  animation-duration: 16s;
+}
+.snowflake:nth-child(7) {
+  left: 70%;
+  animation-duration: 9s;
+}
+.snowflake:nth-child(8) {
+  left: 80%;
+  animation-duration: 7s;
+}
+.snowflake:nth-child(9) {
+  left: 90%;
+  animation-duration: 15s;
+}
+
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  header {
+    margin-top: 60px;
+  }
+
+  .header-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .avatar img {
+    width: 150px;
+  }
+
+  .grid-container {
+    gap: 10px;
+  }
+
+  .card {
+    width: 100px;
+    height: 150px;
+  }
+
+  footer .tree {
+    width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container h1 {
+    font-size: 2rem;
+  }
+
+  .nav-title {
+    font-size: 14px;
+  }
+
+  .grid-header-text {
+    font-size: 1.2rem;
+  }
+}

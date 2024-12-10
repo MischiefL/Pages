@@ -65,7 +65,7 @@ header {
   width: 90%;
   max-width: 850px;
   height: 60px;
-  background-image: url("assets/divHeader3.PNG");
+  background-image: url("assets/divHeader3.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -195,26 +195,48 @@ footer .tree {
   }
 
   .header-container h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 1.3rem;
   }
 
   .avatar img {
     
-    margin-top: -80px;
+    margin-top: -40px;
     width: 150px;
   }
 
   .grid-container {
-    gap: 10px;
+    gap: 20px;
   }
 
   .card {
-    width: 100px;
-    height: 150px;
+    margin-left:8px;
+    width: 120px;
+    height: 170px;
   }
 
   footer .tree {
     width: 80px;
+  }
+
+  .grid-header {
+    gap: 20px;
+    padding: 20px; 
+    margin: 50px auto -35px; 
+    width: 90%;
+    max-width: 768px;
+    height: 20px;
+    background-image: url("assets/divHeader3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .grid-header-text {
+    margin-top: -22px;
+    font-size: 0.7rem;
+    color: #fff;
+    text-align: left;
   }
 }
 

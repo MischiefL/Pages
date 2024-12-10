@@ -13,3 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
     circleType.radius(700); // Cambia el valor del radio si es necesario
     circleType.dir(-1);
   });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const circleType = new CircleType(document.getElementById('footer'));
+  
+    // Configurar el radio de curvatura
+    circleType.radius(600); // Cambia el valor del radio si es necesario
+  });

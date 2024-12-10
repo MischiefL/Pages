@@ -199,6 +199,8 @@ footer .tree {
   }
 
   .avatar img {
+    
+    margin-top: -80px;
     width: 150px;
   }
 

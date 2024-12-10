@@ -13,4 +13,3 @@ document.addEventListener('DOMContentLoaded', () => {
     circleType.radius(700); // Cambia el valor del radio si es necesario
     circleType.dir(-1);
   });
-  
